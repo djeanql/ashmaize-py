@@ -34,8 +34,8 @@ ashmaize-py provides Python bindings to the ashmaize library, a memory-hard hash
 
 1. Clone the repository with submodules:
    ```bash
-   git clone <repository-url>
-   cd ashmaize-python
+   git clone https://github.com/djeanql/ashmaize-py
+   cd ashmaize-py
    ```
 2. Install the ce-ashmaize submodule:
 
