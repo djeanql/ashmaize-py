@@ -48,11 +48,6 @@ ashmaize-py provides Python bindings to the ashmaize library, a memory-hard hash
    pip install -e .
    ```
 
-4. Test:
-   ```bash
-   python test_ashmaize.py
-   ```
-
 ### Midnight Miner
 
 If you are using [Midnight Miner](https://github.com/djeanql/MidnightMiner), you need to:
