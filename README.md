@@ -15,48 +15,14 @@ ashmaize-py provides Python bindings to the ashmaize library, a memory-hard hash
   - `TwoStep`: Faster generation, suitable for most use cases
   - `FullRandom`: More thorough but slower generation
 
-## Quick Start
-
-### Installation
-
-```bash
-# Create virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install setuptools-rust wheel
-
-# Build and install
-pip install -e .
-```
-
-### Usage
-
-```python
-import ashmaize_py
-
-# Build a ROM (1GB with TwoStep method - fast)
-rom = ashmaize_py.build_rom_twostep("my_secret_key")
-
-# Hash a single preimage
-hash_result = rom.hash("my password")
-print(hash_result)  # Hex-encoded hash
-
-# Hash multiple preimages efficiently
-results = rom.hash_batch(["password1", "password2", "password3"])
-
-# Use custom parameters
-custom_hash = rom.hash_with_params("password", nb_loops=16, nb_instrs=512)
-```
 
 ## Platform-Specific Build Instructions
 
 - **macOS**: See [BUILD_MACOS.md](BUILD_MACOS.md)
-- **Linux**: Standard `pip install -e .` should work
+- **Linux**: See below
 - **Windows**: Requires Rust toolchain and MSVC build tools
 
-## Building from Source
+## Building on Linux
 
 ### Prerequisites
 
