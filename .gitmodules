@@ -1,0 +1,3 @@
+[submodule "ce-ashmaize"]
+	path = ce-ashmaize
+	url = https://github.com/input-output-hk/ce-ashmaize
