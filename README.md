@@ -50,14 +50,6 @@ results = rom.hash_batch(["password1", "password2", "password3"])
 custom_hash = rom.hash_with_params("password", nb_loops=16, nb_instrs=512)
 ```
 
-### Testing
-
-Run the included test script to verify everything works:
-
-```bash
-python test_ashmaize.py
-```
-
 ## Platform-Specific Build Instructions
 
 - **macOS**: See [BUILD_MACOS.md](BUILD_MACOS.md)
@@ -79,16 +71,28 @@ python test_ashmaize.py
    git clone <repository-url>
    cd ashmaize-python
    ```
+2. Install the ce-ashmaize submodule:
 
-2. Build and install:
+  ```bash
+  git submodule update --init --recursive
+   ```
+
+3. Build and install:
    ```bash
    pip install -e .
    ```
 
-3. Test:
+4. Test:
    ```bash
    python test_ashmaize.py
    ```
+
+### Midnight Miner
+
+If you are using [Midnight Miner](https://github.com/djeanql/MidnightMiner), you need to:
+- Exit the venv with `deactivate`
+- Copy `target/release/libashmaize_py.so` to MidnightMiner's directory
+- Rename to `ashmaize_py.so`
 
 ## API Reference
 
