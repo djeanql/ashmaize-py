@@ -57,7 +57,7 @@ ashmaize-py provides Python bindings to the ashmaize library, a memory-hard hash
 
 5. Build and install:
    ```bash
-   pip install -e .
+   pip install -e . --no-build-isolation
    ```
 
 ### Midnight Miner
